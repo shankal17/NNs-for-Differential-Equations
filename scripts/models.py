@@ -12,7 +12,7 @@ class MLP(nn.Module):
 
     def forward(self, x):
         out = self.sigmoid(self.fc_1(x))
-        out = self.sigmoid(self.fc_2(out))
+        out = self.fc_2(out)
 
         return out
 
